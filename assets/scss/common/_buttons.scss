@@ -1,0 +1,39 @@
+﻿@import "../base/base";
+
+.button {
+    width: fit-content;
+    height: 4.2rem;          
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding:0 2rem;
+    border-radius: 100vmax;
+    color: $white;
+    font-weight: $font-medium;
+    font-size: 2rem;
+    cursor: pointer;
+    @include fade-transition;
+
+    &.primary {
+        background: $green;
+    }
+
+    &.border {
+        border: solid $dark .1rem;
+        color: $dark;
+        background: none;
+        
+        &:hover {
+            border: solid $green .1rem;
+            color: $green;
+            @include fade-transition;
+        }
+
+        &.small {
+            height: 3rem;
+            font-size: 1.6rem;
+            padding: 0 2rem;
+        }
+    }
+}

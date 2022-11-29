@@ -1,0 +1,72 @@
+﻿
+$desktop: 1920px;
+$desktop-sm: 1370px;
+$tablet-h: 1024px;
+$tablet-v: 768px;
+$phone: 648px;
+
+section {
+  padding: 0 2vw;
+}
+
+//Grid System
+$gutter:1rem;
+
+[class*="col-"] {
+  display: grid;
+  gap: $gutter;
+}
+
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0 6rem;
+
+  @media only screen and (max-width: $tablet-h) {
+    gap: 0;
+ }
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 9;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+
+

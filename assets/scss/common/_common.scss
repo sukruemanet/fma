@@ -1,0 +1,48 @@
+﻿
+@import "../base/base";
+@import "components";
+
+
+.split-line,
+.split-parent,
+.textanimated {
+    overflow: hidden;
+}
+
+figure {
+    position: relative;
+    border-radius: 4rem;
+    overflow: hidden;
+
+    &.parallax {
+        img {
+            position: absolute;
+            width: 100%;
+            height: 140%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+}
+
+.card-items {
+    display: flex;
+
+   .item {
+        display: flex;
+        flex-direction: column;
+
+        sup {
+            font-size: 2rem;
+            font-weight: $font-normal;
+        }
+
+        span {
+            font-size: clamp(4rem, 12vw, 6rem);
+            line-height: 1;
+            font-weight: $font-medium;
+            margin: 2rem 0;
+        }
+   }
+}

@@ -1,0 +1,50 @@
+﻿
+$font-family: 'Clash Display', sans-serif;
+$font-light: 300;
+$font-nomal: normal;
+$font-medium: 500;
+$font-semibold: 600;
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/assets/scss/fonts/ClashDisplay-Light.woff2') format('woff2'),
+        url('/assets/scss/fonts/ClashDisplay-Light.woff') format('woff'),
+        url('/assets/scss/fonts/ClashDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/assets/scss/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+        url('/assets/scss/fonts/ClashDisplay-Regular.woff') format('woff'),
+        url('/assets/scss/fonts/ClashDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/assets/scss/fonts/ClashDisplay-Medium.woff2') format('woff2'),
+        url('/assets/scss/fonts/ClashDisplay-Medium.woff') format('woff'),
+        url('/assets/scss/fonts/ClashDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/assets/scss/fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+        url('/assets/scss/fonts/ClashDisplay-Semibold.woff') format('woff'),
+        url('/assets/scss/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
