@@ -33,9 +33,29 @@ figure {
         display: flex;
         flex-direction: column;
 
+        &:hover {
+            @include fade-transition;
+
+            i {
+     
+                .icon {
+                    left: 0;
+                }
+            }
+        }
+
+        &:nth-child(even) {
+            margin-top: 10rem;
+        }
+
+        figure {
+            height: 70vh;
+        }
+
         sup {
             font-size: 2rem;
             font-weight: $font-normal;
+            color: $dark;
         }
 
         span {
@@ -43,6 +63,41 @@ figure {
             line-height: 1;
             font-weight: $font-medium;
             margin: 2rem 0;
+        }
+
+        i {
+            width: 8rem;
+            height: 8rem;
+            background: $white;
+            border-radius: 2rem;
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            overflow: hidden;
+
+            .icon {
+                width: 16rem;
+                @include fade-transition;
+                overflow: hidden;
+                display: flex;
+                position: absolute;
+                left: -8rem;
+                top: 0;
+
+                .icon-item {
+                    width: 8rem;
+                    height: 8rem;
+                    flex-shrink: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                svg {
+                    fill: $dark;
+                }
+            }
         }
    }
 }
