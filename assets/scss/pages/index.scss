@@ -7,10 +7,10 @@
 
 .start {
     display: grid;
+    height: 100vh;
 
     .caption {
         align-self: center;
-        mix-blend-mode: difference;
     }
 
     .image {
@@ -47,3 +47,7 @@
         margin-bottom: 10rem;
     }
 }
+
+.start-bg {
+    background-color: #fff;
+  }
