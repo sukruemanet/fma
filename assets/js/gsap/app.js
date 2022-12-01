@@ -1,16 +1,16 @@
 
 
 gsap.registerPlugin(ScrollTrigger);
-// gsap.to(".start .bodyScroll", {
-//   autoAlpha: 0,
-//   scrollTrigger: {
-//     trigger: ".start .bodyScroll",
-//     start: "center center",
-//     end: "center center",
-//     scrub: true,
-//     markers: true,
-//   }
-// });
+
+
+ScrollTrigger.create({
+	trigger: 'footer',
+	animation: gsap.fromTo('.footercontent', {y:-300, willChange: "transform", }, {y:0, willChange: "transform",}),
+	start: '-400px center',
+	end: 'bottom top',
+	scrub: true, // I like the 1 sec delay, set to true for exact anime on scroll
+	// markers: true,
+})
 
 //Pin Single Content
 // let st = ScrollTrigger.create({
