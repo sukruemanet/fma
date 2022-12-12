@@ -1,16 +1,5 @@
 
 
-gsap.registerPlugin(ScrollTrigger);
-
-
-ScrollTrigger.create({
-	trigger: 'footer',
-	animation: gsap.fromTo('.footercontent', {y:-300, willChange: "transform", }, {y:0, willChange: "transform",}),
-	start: '-400px center',
-	end: 'bottom top',
-	scrub: true, // I like the 1 sec delay, set to true for exact anime on scroll
-	// markers: true,
-})
 
 //Pin Single Content
 // let st = ScrollTrigger.create({
@@ -91,3 +80,19 @@ timeline.to(
   }
 );
 
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.set(".footer-container", { yPercent: -50 });
+
+const uncover = gsap.timeline({ paused: true });
+
+uncover.to(".footer-container", { yPercent: 0, ease: "none" });
+
+ScrollTrigger.create({
+  trigger: ".conclusion",
+  start: "bottom bottom",
+  end: "+=75%",
+  animation: uncover,
+  scrub: true,
+});
+
+ScrollTrigger.refresh();

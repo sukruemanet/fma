@@ -2,22 +2,53 @@
 @import "../base/base";
 
 footer {
-    background-color: black;
-    height: 50vh;
-    text-align: center;
+    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: white;
+    z-index: -10;
+    display: flex;
+    align-items: center;
     position: relative;
-    margin-top: -5rem;
-    span {
-        font-size: 3vw;
-    color: $white;
 
+    .footer-container {
+        width: 100%;
+        padding: 5vw;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     }
-
-    .footercontent {
-        margin-top: 20rem;
+  
+    nav {
+      max-width: 100rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      .logo {
+        font-size: 5rem;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+  
+        li {
+          margin-right: 2rem;
+          font-size: 1.6rem;
+  
+          a {
+          }
+        }
+      }
     }
-}
-
+  
+    .copyright {
+      font-size: 1rem;
+      color: #fff;
+      margin-top: 10rem;
+    }
+  }
