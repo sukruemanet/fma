@@ -80,19 +80,20 @@ timeline.to(
   }
 );
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-gsap.set(".footer-container", { yPercent: -50 });
+//Footer
+// gsap.registerPlugin(ScrollTrigger);
+// gsap.set(".footer-content", { yPercent: -50 });
 
-const uncover = gsap.timeline({ paused: true });
+// const uncover = gsap.timeline({ paused: true });
 
-uncover.to(".footer-container", { yPercent: 0, ease: "none" });
+// uncover.to(".footer-content", { yPercent: 0, ease: "none" });
 
-ScrollTrigger.create({
-  trigger: ".conclusion",
-  start: "bottom bottom",
-  end: "+=75%",
-  animation: uncover,
-  scrub: true,
-});
+// ScrollTrigger.create({
+//   trigger: ".conclusion",
+//   start: "bottom bottom",
+//   end: "+=75%",
+//   animation: uncover,
+//   scrub: true,
+// });
 
-ScrollTrigger.refresh();
+// ScrollTrigger.refresh();
