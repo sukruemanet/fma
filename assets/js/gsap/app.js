@@ -104,14 +104,7 @@ const categoryMenu = gsap.timeline({
   paused: "true",
 });
 
-categoryMenu.from(".side-menu", {
-  duration: .4,
-  autoAlpha: 0,
-  visibility:"hidden"
-});
-
-categoryMenu.to(".side-menu", {
-  duration: .4,
+categoryMenu.to(".side-menu", 0.20, {
   autoAlpha: 1,
   visibility:"visible"
 });
@@ -119,12 +112,13 @@ categoryMenu.to(".side-menu", {
 categoryMenu.to(".menu-container", {
   duration: 1,
   x: 0,
+  ease:Power3.easeOut,
 });
 categoryMenu.from(
   ".menu-close",
   {
     opacity: 0,
-    rotate: "180deg",
+    // rotate: "180deg",
   },
   "-=.2"
 );
