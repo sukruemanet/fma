@@ -8,9 +8,30 @@ header {
   align-items: center;
   padding: 6rem 0;
 
+  * {
+    will-change: transform;
+  }
+
   .menu {
-    width: 10rem;
-    display: flex;
+    ul {
+      display: flex;
+      li {
+        display: flex;
+        align-items: center;
+        margin: 0 2rem;
+        a {
+          display: flex;
+          align-items: center;
+          font-size: 2.4rem;
+          cursor: pointer;
+          svg {
+            margin-right: 1rem;
+
+            stroke: .8rem;
+          }
+        }
+      }
+    }
   }
 
   a {
@@ -40,3 +61,97 @@ header {
     
   }
 }
+
+.side-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba($dark, .40);
+  }
+
+  .menu-title {
+    font-size: 6rem;
+    color: $dark;
+    font-weight: $font-medium;
+    margin-bottom: 5rem;
+    overflow: hidden;
+    margin-left: 5vw;
+    opacity: 0;
+  }
+
+  .menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: $white;
+    z-index: 100;
+    transform: translateX(500%);
+    padding: 0 5vw;
+  
+    .menu-close {
+      cursor: pointer;
+      position: absolute;
+      top: 4rem;
+      right: 4rem;
+    }
+  }
+  
+  .menu-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 100px;
+      font-size: 40px;
+      overflow: hidden;
+      cursor: pointer;
+      font-weight: lighter;
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      transform-origin: left;
+      overflow: hidden;
+      background-color: $dark;
+    }
+  }
+
+  .menu-items-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 20%;
+  }
+
+  .menu-item {
+    .menu-item-name {
+      color: $dark;
+    }
+  }
+  span {
+    overflow: hidden;
+  }
+  
+}
+

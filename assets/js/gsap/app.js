@@ -97,3 +97,74 @@ timeline.to(
 // });
 
 // ScrollTrigger.refresh();
+
+
+const tl1 = gsap.timeline();
+const categoryMenu = gsap.timeline({
+  paused: "true",
+});
+
+categoryMenu.from(".side-menu", {
+  duration: .4,
+  autoAlpha: 0,
+  visibility:"hidden"
+});
+
+categoryMenu.to(".side-menu", {
+  duration: .4,
+  autoAlpha: 1,
+  visibility:"visible"
+});
+
+categoryMenu.to(".menu-container", {
+  duration: 1,
+  x: 0,
+});
+categoryMenu.from(
+  ".menu-close",
+  {
+    opacity: 0,
+    rotate: "180deg",
+  },
+  "-=.2"
+);
+categoryMenu.from(
+  ".line",
+  {
+    duration: 1,
+    stagger: {
+      amount: 0.5,
+    },
+    width: "0%",
+  },
+  "-=.2"
+);
+
+categoryMenu.to(
+  ".menu-title",
+  {
+    duration: .5,
+    autoAlpha: 1,
+  },
+  "-=1.3"
+);
+
+categoryMenu.from(
+  ".menu-item-name",
+  {
+    duration: 1,
+    stagger: {
+      amount: 0.5,
+    },
+    y: 100,
+  },
+  "-=1.3"
+);
+function menuOpen() {
+  categoryMenu.play();
+  smoother.paused(true);
+}
+function menuClose() {
+  categoryMenu.reverse();
+  smoother.paused(false);
+}
