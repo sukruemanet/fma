@@ -12,6 +12,20 @@ $(function () {
 });
 
 
+// $(document).ready(function () {
+//     //Modalbox Open
+//     $('.item').click(function () {
+//         smoother.paused(true);
+//     });
+
+//     //Modalbox Close
+//     $('.lg-close').click(function () {
+//         smoother.paused(false);
+//     });
+// });
+
+
+
 
 
 
