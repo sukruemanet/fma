@@ -311,3 +311,30 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
+
+.breadcrumb {
+    display: flex;
+
+    li {
+        display: flex;
+        align-items: center;
+
+        &.active {
+            a {
+                color: $dark;
+                font-weight: $font-medium;
+            }
+        }
+
+        a {
+            font-size: 2rem;
+            color: rgba($dark, .40);
+            display: flex;
+            align-items: center;
+        }
+
+        svg {
+            margin: 0 2rem;
+        }
+    }
+}

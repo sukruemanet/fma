@@ -2,13 +2,13 @@
 
 .button {
     width: fit-content;
-    height: 4.2rem;          
+    height: 5.6rem;          
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     padding:0 2rem;
-    border-radius: 100vmax;
+    border-radius: 1rem;
     color: $white;
     font-weight: $font-medium;
     font-size: 2rem;
@@ -16,7 +16,12 @@
     @include fade-transition;
 
     &.primary {
-        background: $green;
+        background: $dark;
+
+        svg {
+            fill: $white;
+            margin-left: 1rem;
+        }
     }
 
     &.border {
@@ -37,3 +42,4 @@
         }
     }
 }
+
