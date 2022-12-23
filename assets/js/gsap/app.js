@@ -162,3 +162,10 @@ function menuClose() {
   categoryMenu.reverse();
   smoother.paused(false);
 }
+
+$(document).keydown(function (e) {
+  if (e.keyCode == 27) {
+    categoryMenu.reverse();
+    smoother.paused(false);
+  }
+});
