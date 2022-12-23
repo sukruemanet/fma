@@ -24,6 +24,16 @@
         }
     }
 
+    &.light {
+        background: $white;
+        color: $dark;
+
+        svg {
+            fill: $dark;
+            margin-left: 1rem;
+        }
+    }
+
     &.border {
         border: solid $dark .1rem;
         color: $dark;
