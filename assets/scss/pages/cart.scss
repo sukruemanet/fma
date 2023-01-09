@@ -296,6 +296,11 @@ form {
             min-width: 15rem;
         }
     }
+
+    .pay-button {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 
