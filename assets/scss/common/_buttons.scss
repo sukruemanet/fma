@@ -1,4 +1,4 @@
-﻿@import "../base_base";
+﻿@import "../base/_base";
 
 .button {
     width: fit-content;
@@ -38,6 +38,12 @@
         border: solid $dark .1rem;
         color: $dark;
         background: none;
+
+        &.back {
+            svg {
+                margin-right: 1rem;
+            }
+        }
         
         &:hover {
             border: solid $green .1rem;

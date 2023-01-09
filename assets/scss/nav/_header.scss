@@ -60,6 +60,14 @@ header {
     }
     
   }
+
+  &.cart {
+    a {
+      &:first-child, &:last-child  {
+        width: 30rem;
+      }
+    }
+  }
 }
 
 .side-menu {
