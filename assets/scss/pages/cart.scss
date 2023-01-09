@@ -2,6 +2,8 @@
 @import "../base/_base";
 @import "../common/_buttons";
 @import "../common/_typography";
+@import "../common/_grid";
+@import "../common/_components";
 @import "../nav/_header";
 
 body,
@@ -35,6 +37,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     background: #F6F6F6;
+    height: 100%;
 
     &::-webkit-scrollbar {
         width: 0;
@@ -112,6 +115,7 @@ body {
     .content {
         display: flex;
         justify-content: space-between;
+        margin-top: 8rem;
 
         .head {
             font-size: 2.2rem;
@@ -269,6 +273,27 @@ body {
                 width: 100%;
                 margin-top: 2rem;
             }
+        }
+    }
+}
+
+form {
+    width: 100%;
+    margin: 0;
+
+    .item {
+        padding-bottom: 4rem;
+    }
+
+    .phone {
+        display: flex;
+        .selectbox {
+            width: 15rem;
+            margin-right: 1rem;
+        }
+
+        .selectric-items {
+            min-width: 15rem;
         }
     }
 }
