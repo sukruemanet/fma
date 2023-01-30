@@ -11,9 +11,10 @@ mm.add("(min-width: 768px)", () => {
     wrapper: "#smoother-wrapper",
     content: "#smoother-content",
     smooth: 1,
-    normalizeScroll: true,
+    normalizeScroll: { allowNestedScroll: true },
     ignoreMobileResize: true,
     effects: true,
+    preventDefault: true
   });
   
   return () => smoother.kill();

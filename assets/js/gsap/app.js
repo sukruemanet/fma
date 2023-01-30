@@ -169,3 +169,4 @@ $(document).keydown(function (e) {
     smoother.paused(false);
   }
 });
+
