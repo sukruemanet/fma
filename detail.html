@@ -341,24 +341,8 @@
                 controls: true,
                 showCloseIcon: true,
                 download: false,
-                rotate: true
+                rotate: true,
             },
-        });
-   
-        $(function () {
-            $(".gallery .item").click(function (event) {
-                smoother.paused(true);
-            });
-
-            $(".lg-close").click(function (event) {
-                smoother.paused(false);
-            });
-        });
-
-        $(document).keydown(function (e) {
-            if (e.keyCode == 27) {
-                smoother.paused(false);
-            }
         });
 
     </script>

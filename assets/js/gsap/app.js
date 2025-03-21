@@ -146,14 +146,15 @@ categoryMenu.to(
 categoryMenu.from(
   ".menu-item-name",
   {
-    duration: 1,
+    duration: 1.4,
     stagger: {
       amount: 0.5,
     },
-    y: 100,
+    y: 150,
   },
   "-=1.3"
 );
+
 function menuOpen() {
   categoryMenu.play();
   smoother.paused(true);

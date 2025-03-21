@@ -110,6 +110,10 @@ body {
     
     h6 {
         text-align: center;
+
+        @media only screen and (max-width: $desktop) {
+            font-size: clamp(4rem, 12vw, 6rem);
+         }
     }
 
     .content {
@@ -213,6 +217,7 @@ body {
         .cart-summary {
             width: 50rem;
             margin-left: 10rem;
+            padding-bottom: 10rem;
 
             .summary {
                 width: 100%;

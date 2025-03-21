@@ -29,6 +29,10 @@ h5 {
     line-height: 1;
     font-weight: $font-light;
 
+    @media only screen and (max-width: $desktop) {
+        font-size: clamp(8rem, 12vw, 9rem);
+     }
+
     strong {
         font-weight: $font-normal;
     }
